@@ -1,0 +1,30 @@
+{
+  "healingHistory": [
+    {
+      "timestamp": "2024-10-13T10:00:00Z",
+      "originalLocator": "#wrong-username-selector",
+      "suggestedLocator": "#username",
+      "status": "healed",
+      "testFile": "demo-healing-test.spec.js",
+      "reason": "Original locator did not exist, AI suggested correct username field selector"
+    },
+    {
+      "timestamp": "2024-10-13T10:00:01Z",
+      "originalLocator": "#wrong-password-selector", 
+      "suggestedLocator": "#password",
+      "status": "healed",
+      "testFile": "demo-healing-test.spec.js",
+      "reason": "Original locator did not exist, AI suggested correct password field selector"
+    },
+    {
+      "timestamp": "2024-10-13T10:00:02Z",
+      "originalLocator": "[data-test=\"wrong-login-button\"]",
+      "suggestedLocator": "button[type='submit']",
+      "status": "healed", 
+      "testFile": "demo-healing-test.spec.js",
+      "reason": "Original locator did not exist, AI suggested correct submit button selector"
+    }
+  ],
+  "demoMode": true,
+  "lastHealingRun": "2024-10-13T10:00:00Z"
+}

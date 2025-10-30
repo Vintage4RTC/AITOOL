@@ -1,0 +1,8 @@
+{
+  "platform-login-btn": "a[href*='platform']",
+  "username-field": "#username",
+  "password-field": "#password", 
+  "login-button": "button[type='submit']",
+  "navigation-menu": ".nav-menu",
+  "sign-out-btn": "a[href*='logout']"
+}

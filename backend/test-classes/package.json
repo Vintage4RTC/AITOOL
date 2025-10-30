@@ -1,0 +1,21 @@
+{
+  "name": "automation-test-classes",
+  "version": "1.0.0",
+  "description": "Automation test classes for Teaching Channel, Passage Prep, and Lavinia",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:teaching-channel": "playwright test test-classes/teaching-channel/",
+    "test:passage-prep": "playwright test test-classes/passage-prep/",
+    "test:lavinia": "playwright test test-classes/lavinia/",
+    "test:login": "playwright test test-classes/teaching-channel/LoginTest.js",
+    "test:assessment": "playwright test test-classes/passage-prep/AssessmentTest.js",
+    "test:workflow": "playwright test test-classes/lavinia/WorkflowTest.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.55.0"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.55.0"
+  }
+}
