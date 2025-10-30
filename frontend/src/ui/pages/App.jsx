@@ -25,7 +25,7 @@ export default function App(){
             <div className="flex items-center justify-between">
           <div>
         <h1 className="text-3xl font-bold text-slate-800 mb-2">
-          K12 Coalition QA Testing Platform
+          RTCTEK QA Tool
         </h1>
                 <p className="text-slate-600 text-lg">
                   Automated testing and quality assurance for educational platforms
@@ -350,7 +350,7 @@ function JiraSection(){
                   type="email"
                   value={username} 
                   onChange={e => setUsername(e.target.value)} 
-                  placeholder="username@k12coalition.com" 
+                  placeholder="user@example.com" 
                   className="w-full border border-slate-300 rounded-lg px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
                   aria-describedby="jira-username-help"
                 />

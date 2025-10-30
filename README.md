@@ -1,4 +1,4 @@
-# 🧪 QA Testing Agent
+# 🧪 RTCTEK QA Tool
 
 AI-powered test automation platform with Jira integration, self-healing tests, and CI/CD support.
 
@@ -102,7 +102,7 @@ npx playwright show-report
 
 Required in `backend/.env`:
 ```bash
-OPENAI_API_KEY=sk-...
+OPENAI_API_KEY=your_openai_api_key_here
 JIRA_HOST=your-domain.atlassian.net
 JIRA_USERNAME=your-email@domain.com
 JIRA_API_TOKEN=your-token
@@ -111,7 +111,11 @@ JIRA_API_TOKEN=your-token
 Optional:
 ```bash
 JENKINS_URL=http://jenkins:8080
-SLACK_WEBHOOK_URL=https://hooks.slack.com/...
+SLACK_WEBHOOK_URL=https://hooks.slack.com/services/XXX/YYY/ZZZ
+DEMO_LOGIN_USERNAME=
+DEMO_LOGIN_PASSWORD=
+BASIC_AUTH_USERNAME=
+BASIC_AUTH_PASSWORD=
 GMAIL_USER=your-email@gmail.com
 ```
 

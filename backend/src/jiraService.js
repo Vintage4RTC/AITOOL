@@ -617,7 +617,7 @@ test.describe('Students Page Functionality Tests', () => {
         // Fill username/email
         const usernameField = page.locator('input[name="username"], input[name="email"]').first();
         await usernameField.waitFor({ state: 'visible', timeout: 5000 });
-        await usernameField.fill('${businessUnit === 'lavinia' ? (process.env.LAVINIA_APP_USERNAME || 'faraz.khan@k12coalition.com') : businessUnit === 'passage prep' ? (process.env.PASSAGE_PREP_APP_USERNAME || 'faraz.khan@k12coalition.com') : (process.env.SMARTAPP_APP_USERNAME || 'faraz.khan@k12coalition.com')}');
+        await usernameField.fill('${businessUnit === 'lavinia' ? (process.env.LAVINIA_APP_USERNAME || '') : businessUnit === 'passage prep' ? (process.env.PASSAGE_PREP_APP_USERNAME || '') : (process.env.SMARTAPP_APP_USERNAME || '')}');
         console.log('✅ Username filled');
         
         // Fill password

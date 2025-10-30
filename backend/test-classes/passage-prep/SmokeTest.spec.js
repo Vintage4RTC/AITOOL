@@ -36,7 +36,7 @@ test.describe('Passage Prep - Smoke Tests', () => {
     await page.click('text=Login');
     await page.waitForLoadState('domcontentloaded');
 
-    await page.fill('input[name="username"]', 'k12qaautomation@gmail.com');
+    await page.fill('input[name="username"]', process.env.DEMO_LOGIN_USERNAME || '');
     await page.fill('input[name="password"]', 'yE4hkSy3iEvPlvUte!HB@#CQ');
     await page.click('button[type="submit"]');
     await page.waitForLoadState('domcontentloaded');

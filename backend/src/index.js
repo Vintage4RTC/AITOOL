@@ -3996,9 +3996,9 @@ async function executeSmokeTest(page, agent) {
         console.log('⚠️ Could not find "Login To Account" CTA; proceeding')
       }
 
-      // 2) Fill username and password
-      const username = 'k12qaautomation@gmail.com'
-      const password = 'yE4hkSy3iEvPlvUte!HB@#CQ'
+      // 2) Fill username and password (use environment variables or leave blank for manual input)
+      const username = process.env.DEMO_LOGIN_USERNAME || ''
+      const password = process.env.DEMO_LOGIN_PASSWORD || ''
 
       // Robust selector sets (WordPress and common forms)
       const userSelectors = [

@@ -101,7 +101,7 @@ export class PlaywrightTestGenerator {
 
   generateTestContent({ projectId, testType, targetUrl, basicAuth, loginFlow, projectConfig, agentId }) {
     const testName = `${projectId}-${testType}-test`
-    const loginUsername = loginFlow?.username || projectConfig.loginUsername || 'k12qaautomation@gmail.com'
+    const loginUsername = loginFlow?.username || projectConfig.loginUsername || process.env.DEMO_LOGIN_USERNAME || ''
     const loginPassword = loginFlow?.password || projectConfig.loginPassword || 'yE4hkSy3iEvPlvUte!HB@#CQ'
     const basicAuthUser = basicAuth?.username || projectConfig.basicAuth?.username
     const basicAuthPass = basicAuth?.password || projectConfig.basicAuth?.password

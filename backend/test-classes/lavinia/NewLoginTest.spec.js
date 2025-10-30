@@ -10,8 +10,8 @@ test('Environment-Specific Test', async ({ page }) => {
   // And I navigate to "https://laviniagro1stg.wpengine.com/user-account/"
   await page.goto("https://laviniagro1stg.wpengine.com/user-account/");
 
-  // When I fill "username" with "k12qaautomation@gmail.com"
-  await page.fill('[name="username"]', "k12qaautomation@gmail.com");
+  // When I fill "username" from environment
+  await page.fill('[name="username"]', process.env.DEMO_LOGIN_USERNAME || "");
 
   // And I fill "password" with "$VMF!)uxZLo9HqlLN4aMmS*D"
   await page.fill('[name="password"]', "$VMF!)uxZLo9HqlLN4aMmS*D");

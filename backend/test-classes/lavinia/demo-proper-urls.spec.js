@@ -5,10 +5,10 @@ const BASE_URL = 'https://laviniagro1stg.wpengine.com/';
 test.describe('RTCTEK QA Testing Platform - Demo Script', () => {
   test.beforeEach(async ({ browser }) => {
     // Set basic authentication credentials on context
-    const context = await browser.newContext({ 
+  const context = await browser.newContext({ 
       httpCredentials: { 
-        username: 'laviniagro1stg', 
-        password: '7ada27f4' 
+        username: process.env.BASIC_AUTH_USERNAME || '', 
+        password: process.env.BASIC_AUTH_PASSWORD || '' 
       } 
     });
     const page = await context.newPage();
@@ -31,13 +31,13 @@ test.describe('RTCTEK QA Testing Platform - Demo Script', () => {
         // Fill username/email
         const usernameField = page.locator('input[name="username"], input[name="email"]').first();
         await usernameField.waitFor({ state: 'visible', timeout: 5000 });
-        await usernameField.fill('k12qaautomation@gmail.com');
+        await usernameField.fill(process.env.DEMO_LOGIN_USERNAME || '');
         console.log('✅ Username filled');
         
         // Fill password
         const passwordField = page.locator('input[name="password"]').first();
         await passwordField.waitFor({ state: 'visible', timeout: 5000 });
-        await passwordField.fill('password123');
+        await passwordField.fill(process.env.DEMO_LOGIN_PASSWORD || '');
         console.log('✅ Password filled');
         
         // Click login button

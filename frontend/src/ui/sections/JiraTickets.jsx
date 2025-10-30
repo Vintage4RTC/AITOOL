@@ -7,7 +7,7 @@ export default function JiraTickets() {
   const [testCases, setTestCases] = useState([])
   const [playwrightScript, setPlaywrightScript] = useState('')
   const [generating, setGenerating] = useState(false)
-  const [username, setUsername] = useState('faraz.khan@k12coalition.com')
+  const [username, setUsername] = useState('')
   const [statusFilter, setStatusFilter] = useState('all')
   const [materializing, setMaterializing] = useState(false)
   const [running, setRunning] = useState(false)

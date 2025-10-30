@@ -8,13 +8,13 @@ export const testingProfiles = {
        passwordSelector: 'input[name="password"], input[type="password"], #user_pass',
        // removed :has-text(...) (Playwright-only) -> keep pure CSS
        submitSelector: 'button[type="submit"], input[type="submit"]',
-       usernameEnv: "faraz.khan+1@k12coalition.com",
-       passwordEnv: "zJmIMIgp&i%fhP1HjhoRY^D6"
+      usernameEnv: process.env.DEMO_LOGIN_USERNAME || "",
+      passwordEnv: process.env.DEMO_LOGIN_PASSWORD || ""
      },
-     basicAuth: {
-       username: "laviniagro1stg",
-       password: "7ada27f4"
-     },
+    basicAuth: {
+      username: process.env.BASIC_AUTH_USERNAME || "",
+      password: process.env.BASIC_AUTH_PASSWORD || ""
+    },
      prompts: {
        smoke: `
  This is my URL : https://passageprepstg.wpenginepowered.com/ I want to do smoke test on it Basic auth username : passageprepstg and password is : 777456c1 Will you be able to do it ?
@@ -126,8 +126,8 @@ export const testingProfiles = {
      },
      login: {
        path: "/my-account/",
-       username: "k12qaautomation@gmail.com",
-       password: "yE4hkSy3iEvPlvUte!HB@#CQ",
+      username: process.env.DEMO_LOGIN_USERNAME || "",
+      password: process.env.DEMO_LOGIN_PASSWORD || "",
  
        // broadened, robust CSS-only selectors
        usernameSelector:
@@ -145,7 +145,7 @@ export const testingProfiles = {
      },
      prompts: {
        smoke: `
- This is my URL : https://passageprepstg.wpenginepowered.com/ I want to do smoke test on it Basic auth username : passageprepstg and password is : 777456c1 and whe we land on the page there will be username and password field put these username: "k12qaautomation@gmail.com",
+ This is my URL : https://example.com I want to do smoke test on it Basic auth username : ${process.env.BASIC_AUTH_USERNAME || ''} and password is : ${process.env.BASIC_AUTH_PASSWORD || ''} and when we land on the page there will be username and password field put these username: "${process.env.DEMO_LOGIN_USERNAME || ''}",
      password: "yE4hkSy3iEvPlvUte!HB@#CQ" and then click Log In and wait until page contains Dashboard
  
  Please execute a comprehensive smoke test including:

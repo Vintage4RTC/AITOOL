@@ -6,7 +6,7 @@
   - Username: `laviniagro1stg`
   - Password: `7ada27f4`
 - **Platform Login Credentials**:
-  - Email: `faraz.khan+1@k12coalition.com`
+  - Email: `user@example.com`
   - Password: `zJmIMIgp&i%fhP1HjhoRY^D6`
 
 ## Test Types Overview

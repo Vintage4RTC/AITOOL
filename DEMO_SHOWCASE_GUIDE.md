@@ -1,4 +1,4 @@
-# 🎯 K12 Coalition QA Testing Platform - Demo Showcase Guide
+# 🎯 RTCTEK QA Tool - Demo Showcase Guide
 
 ## 🚀 Demo Overview
 
@@ -9,7 +9,7 @@ This guide will help you showcase the **AI-Powered Test Healing** functionality 
 ## 📋 Demo Script
 
 ### 1. **Introduction** (2 minutes)
-- **"Today I'll show you our K12 Coalition QA Testing Platform with AI-powered test healing"**
+- **"Today I'll show you our RTCTEK QA Tool with AI-powered test healing"**
 - **"When tests fail due to locator issues, our AI automatically suggests fixes"**
 - **"This saves hours of manual debugging and keeps tests running"**
 
@@ -212,4 +212,4 @@ If anything goes wrong:
 
 **Good luck with your demo! 🚀**
 
-*The K12 Coalition QA Testing Platform with AI healing is ready to impress!*
+*The RTCTEK QA Tool with AI healing is ready to impress!*
